@@ -12,6 +12,7 @@
 	<!-- let front controller know where are other controller and we use that 
 		controller -->
 	<context:component-scan base-package="net.pratham.afflux.controller" />
+	<context:component-scan base-package="net.pratham.affluxbackend.daoimpl" />
 	<!-- to confgure view resolver -->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver"

@@ -1,6 +1,6 @@
-jQuery(document).ready(function($){
+//jQuery(document).ready(function($){
 	
-	var path = window.location.pathname.split("/").pop();
+	/*var path = window.location.pathname.split("/").pop();
 	
 	if(path == '')
 		{
@@ -11,10 +11,11 @@ jQuery(document).ready(function($){
 	var target = $('nav a[href=" '+path+' "]');
 	
 	target.addClass('active');
-	
+	*/
 	
 	//solving active menu problem
-	/*switch(menu){
+	$(function(){
+	switch(menu){
 	
 	
 	case 'About us':
@@ -25,10 +26,15 @@ jQuery(document).ready(function($){
 		$('#contact').addClass('active');
 		break;
 		
-	default:
-		$('#home').addClass('active');
+	case 'All Salons':
+		$('#viewsalon').addClass('active');
 		break;
 		
-	}*/
+	default:
+		$('#viewsalon').addClass('active');
+	$('#a_'+menu).addClass('active');
+		break;
+		
+	}
 	
 });
